@@ -1,8 +1,36 @@
 <html>
     <head>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
+        <title></title>
     </head>
     <body>
-        <p>Hello<br>Hi</p>
+        <script>
+            function set_starsBGX(event) {
+                document.body.style.backgroundPositionX = `${(window.innerWidth * 2).toString()}px, -${window.innerWidth.toString()}px`;
+            }
+            addEventListener("resize", (event) => set_starsBGX(event));
+            
+            set_starsBGX();
+        </script>
+        <div id="main">
+            <div id="top">
+                <div class="logo">
+                    <img src="ui/logo.png">
+                </div>
+                <li>
+                    <a class="selected" href="./index.html">Home</a>
+                    <a>Characters</a>
+                    <a>Maps</a>
+                    <a class="download-button">Downloads</a>
+                    <a>Info</a>
+                </li>
+            </div>
+            <div id="text">
+                <h1>Welcome to Test website!</h1>
+                <a>test</a><br>
+                <a>test</a>
+            </div>
+        </div>
     </body>
 </html>

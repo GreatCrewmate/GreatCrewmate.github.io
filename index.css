@@ -1,3 +1,185 @@
+:root {
+    position: relative;
+    background: url('ui/bg.png') fixed center no-repeat;
+    background-size: 100% 100%, cover;
+    background-color: #0b032c;
+}
+
+html {
+    font-size: 26px;
+}
+
+@-webkit-keyframes starsFront {
+    100% {
+        background-position-x: right, left;
+    }
+}
+
 body {
-    background: #ffbaba;
+    height: 100%;
+    background: fixed left repeat;
+    background-image: url('ui/stars.png');
+    margin: 0;
+    background-size: 100%;
+    -webkit-animation: starsFront 120s infinite linear;
+}
+
+#top {
+    background-color: #140f716d;
+    backdrop-filter: blur(10px);
+}
+
+#top * {
+    display: flex;
+    justify-content: space-evenly;
+    position: sticky;
+}
+
+#top li > a {
+    padding: 8px;
+    border-radius: 8px;
+}
+
+#top li > a:hover {
+    background-color: #1236B7;
+    color: #dbeaff;
+}
+
+#top li > a.selected {
+    color: #6889ff;
+}
+
+#top li > a.selected:hover {
+    background-color: #1236B7;
+    color: #dbeaff;
+}
+
+#top > .logo {
+    position: inherit;
+    padding-top: 8px;
+}
+
+.logo > img {
+    width: 65px;
+    height: auto;
+    object-fit: contain;
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+h1 {
+    color: #fff;
+    font-family: "Comfortaa", sans-serif;
+}
+
+#text a {
+    color: #fff;
+    font-family: "Comfortaa", sans-serif;
+}
+
+/* a {
+    cursor: url('ui/cursor/static.png') 17 12, auto;
+} */
+
+#top li > a {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    color: #fff;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    text-decoration: none;
+}
+
+@media (max-width: 1050px) {
+    html {
+        font-size: 24px;
+    }
+
+    #top {
+        backdrop-filter: blur(8px);
+    }
+}
+
+@media (max-width: 1000px) {
+    html {
+        font-size: 22px;
+    }
+
+    #top {
+        backdrop-filter: blur(7px);
+    }
+}
+
+@media (max-width: 850px) {
+    html {
+        font-size: 20px;
+    }
+
+    #top li > a {
+        font-size: 22px;
+    }
+
+    .logo > img {
+        width: 55px;
+    }
+
+    #top {
+        backdrop-filter: blur(6px);
+    }
+}
+
+@media (max-width: 800px) {
+    html {
+        font-size: 22px;
+    }
+
+    #top li > a {
+        font-size: 18px;
+    }
+
+    .logo > img {
+        width: 50px;
+    }
+
+    #top {
+        backdrop-filter: blur(5px);
+    }
+}
+
+@media (max-width: 650px) {
+    html {
+        font-size: 14px;
+    }
+
+    #top {
+        backdrop-filter: blur(4px);
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+
+    #top li > a {
+        font-size: 14px;
+    }
+
+    .logo > img {
+        width: 40px;
+    }
+}
+
+@media (max-width: 490px) {
+    html {
+        font-size: 10px;
+    }
 }
