@@ -23,6 +23,10 @@ body {
     -webkit-animation: starsFront 120s infinite linear;
 }
 
+li > a > i {
+    margin-right: 4px;
+}
+
 #top {
     background-color: #140f716d;
     backdrop-filter: blur(10px);
@@ -71,17 +75,13 @@ body {
     padding: 2.5rem;
 }
 
-h1 {
+h1, h5, #text a, p {
     color: #fff;
     font-family: "Comfortaa", sans-serif;
 }
 
-#text a {
-    color: #fff;
-    font-family: "Comfortaa", sans-serif;
-}
-
-/* a {
+/* will be used later
+a {
     cursor: url('ui/cursor/static.png') 17 12, auto;
 } */
 
@@ -93,6 +93,23 @@ h1 {
     font-weight: bold;
     font-size: 26px;
     text-decoration: none;
+}
+
+.socials {
+    margin-top: 16px;
+    color: #fff;
+}
+
+.socials > a {
+    font-size: 44px;
+}
+
+.socials > a i:hover {
+    color: #1da1f2;
+}
+
+.socials > h5 {
+    margin: 2px;
 }
 
 @media (max-width: 1050px) {
@@ -126,6 +143,10 @@ h1 {
 
     .logo > img {
         height: 60px;
+    }
+
+    .socials > a {
+        font-size: 28px;
     }
 
     #top {
@@ -172,7 +193,10 @@ h1 {
 
     .logo > img {
         height: 40px;
-        width: auto;
+    }
+
+    .socials > a {
+        font-size: 24px;
     }
 }
 
